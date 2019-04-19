@@ -1,7 +1,7 @@
 
 # KaggleTitanicModels
 
-[![Lifecycle
+![Lifecycle
 ](https://img.shields.io/badge/lifecycle-experimental-orange.svg?style=flat)
 ![R
 %>%= 3.2.0](https://img.shields.io/badge/R->%3D3.2.0-blue.svg?style=flat)
@@ -103,17 +103,17 @@ accuracies for the Titanic competition are included in the table below:
 
 These files demonstrate how to build models for most of the supported caret classification methods:
 
- * 1-load.R
+ * [1-load.R](https://github.com/makeyourownmaker/KaggleTitanicModels/blob/master/1-load.R)
    * Literally just loads the data
- * 2-clean.R
+ * [2-clean.R](https://github.com/makeyourownmaker/KaggleTitanicModels/blob/master/2-clean.R)
    * No cleaning this time!
    * There are quite a few missing values but some imputation is attempted in the feature engineering section
- * 3-feature-engineering.R
+ * [3-feature-engineering.R](https://github.com/makeyourownmaker/KaggleTitanicModels/blob/master/3-feature-engineering.R)
    * Based on [Trevor Stephens' tutorial](https://trevorstephens.com/kaggle-titanic-tutorial/r-part-4-feature-engineering/)
- * 4-build-models.R
+ * [4-build-models.R](https://github.com/makeyourownmaker/KaggleTitanicModels/blob/master/4-build-models.R)
    * Uses 10-fold cross-validation with wide variety of caret classification methods
    * Some problematic and slower methods are excluded
- * 5-submission.R
+ * [5-submission.R](https://github.com/makeyourownmaker/KaggleTitanicModels/blob/master/5-kaggle-submission.R)
    * Prepare CSV file for Kaggle submission
  * KaggleTitanicModels.RData
    * An R session image containing 97 successfully built classification methods

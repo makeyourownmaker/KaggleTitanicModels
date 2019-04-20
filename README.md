@@ -53,12 +53,14 @@ random forests, clustering etc.
 Currently 97 classification methods run successfully.  A number of slow
 and problematic methods were excluded.
 
-The most accurate caret classification method is xgbDART which is one of 
-the eXtreme Gradient Boosting methods from the 
-[xgboost](https://cran.r-project.org/web/packages/xgboost/index.html) 
-package.  It has one of the longest runtimes though.
+One of the most accurate caret classification methods is avNNet which is one 
+of the neural network methods from the venerable
+[nnet](https://cran.r-project.org/web/packages/nnet/index.html) package.  
+The Survived classes are reasonably balanced so accuracy is an acceptible
+performance metric and it's the metric used on the 
+[Kaggle leaderboard](https://www.kaggle.com/c/titanic/leaderboard).
 
-Confusion matrix for xgbDART method:
+Confusion matrix for avNNet method on 10-fold cross-validated training data:
 ```
 Cross-Validated (10 fold) Confusion Matrix
 
@@ -70,6 +72,15 @@ Prediction    0    1
          1  6.2 29.1
 
  Accuracy (average) : 0.8452
+```
+
+Confusion matrix for avNNet method on Kaggle leaderboard data:
+```
+      0   1
+  0 215  45
+  1  52 106
+
+               Accuracy : 0.7679
 ```
 
 The 20 caret classification methods with highest 10-fold cross-validation 
@@ -97,6 +108,9 @@ accuracies for the Titanic competition are included in the table below:
     | glmnet            | 0.8295   | 0.6352 | 8.829          |
     | regLogistic       | 0.8295   | 0.6356 | 172.626        |
     | glmboost          | 0.8284   | 0.6333 | 10.090         |
+
+Note: The xgbDART method has surprisinly bad performance on the Kaggle
+leaderboard.
 
 
 ## Files
@@ -160,6 +174,9 @@ load("KaggleTitanicModels.RData")
 * Add more detailed diagnostics for best performing methods
   * Resampling boxplots
   * ROC plots
+* Re-order the classification methods:
+  * By either accuracy 
+  * Or run time
     
 
 ## Limitations

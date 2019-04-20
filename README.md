@@ -203,7 +203,9 @@ load("KaggleTitanicModels.RData")
 
 ## Alternatives
 
-* Kaggle Titanic repositories on github: [Search](https://github.com/search?q=kaggle+titanic) [Topic](https://github.com/topics/kaggle-titanic)
+* Kaggle Titanic repositories on github
+  * [Search](https://github.com/search?q=kaggle+titanic)
+  * [kaggle-titanic Topic](https://github.com/topics/kaggle-titanic)
 * [Kaggle Titanic kernels on Kaggle](https://www.kaggle.com/c/titanic/kernels)
 * [Titanic passenger list from Encyclopedia Titanica](https://www.encyclopedia-titanica.org/titanic-passenger-list/)
 

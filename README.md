@@ -23,7 +23,7 @@ package for feature engineering.
 The [doParallel](https://cran.r-project.org/web/packages/doParallel/index.html)
 package for parallelising training.
 
-
+To install the required libraries in an R session:
 ```
 install.packages("caret", dependencies = c("Depends", "Suggests"))
 install.packages("rpart") # rpart should be installed with above command
@@ -136,6 +136,13 @@ These files demonstrate how to build models for most of the supported caret clas
 
 ## Installation/Usage
 
+To install the required libraries in an R session:
+```
+install.packages("caret", dependencies = c("Depends", "Suggests"))
+install.packages("rpart") # rpart should be installed with above command
+install.packages("doParallel")
+```
+
 The R files can be ran in sequence or the R session image can be loaded.
 
 Clone repository:
@@ -144,9 +151,9 @@ git clone https://github.com/makeyourownmaker/KaggleTitanicModels
 cd KaggleTitanicModels
 ```
 
-Either run files in sequence:
+Either run files in sequence in an R session:
 ```
-R
+setwd("KaggleTitanicModels")
 source("1-load.R", echo = TRUE)
 source("2-clean.R", echo = TRUE)
 source("3-feature-engineering.R", echo = TRUE)
@@ -154,9 +161,9 @@ source("4-build-models.R", echo = TRUE)
 source("5-kaggle-submission.R", echo = TRUE)
 ```
 
-Or load R session image:
+Or load R session image in an R session:
 ```
-R
+setwd("KaggleTitanicModels")
 load("KaggleTitanicModels.RData")
 ```
 
@@ -196,7 +203,7 @@ load("KaggleTitanicModels.RData")
 
 ## Alternatives
 
-* [Kaggle Titanic repos on github](https://github.com/search?q=kaggle+titanic)
+* Kaggle Titanic repositories on github: [Search](https://github.com/search?q=kaggle+titanic) [Topic](https://github.com/topics/kaggle-titanic)
 * [Kaggle Titanic kernels on Kaggle](https://www.kaggle.com/c/titanic/kernels)
 * [Titanic passenger list from Encyclopedia Titanica](https://www.encyclopedia-titanica.org/titanic-passenger-list/)
 

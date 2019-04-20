@@ -12,7 +12,7 @@ competition on [Kaggle](https://www.kaggle.com/).
 
 ## Requirements
 
-Requires R version 3.2.0 or higher.  
+R version 3.2.0 or higher.  
 
 The [caret](http://topepo.github.io/caret/) package plus dependencies and 
 suggestions.
@@ -174,9 +174,10 @@ load("KaggleTitanicModels.RData")
 * Add more detailed diagnostics for best performing methods
   * Resampling boxplots
   * ROC plots
-* Re-order the classification methods:
-  * By either accuracy 
-  * Or run time
+* Re-order classification methods
+  * By accuracy 
+  * By run time
+  * Or some compromise between the accuracy and run time
     
 
 ## Limitations
@@ -184,7 +185,11 @@ load("KaggleTitanicModels.RData")
 * Caret method limitations
   * Some of the caret methods only expose a subset of the tuning parameters 
     from the underlying libraries
+  * Other caret methods are somewhat limited in the feature interactions they
+    support
 * I'm not going to build ensembles of models
+  * Diminishing returns set in quickly (time would be better spent on feature 
+    engineering)
   * [caretEnsemble](https://cran.r-project.org/web/packages/caretEnsemble/) is 
     a great library if your interested in that sort of thing
 

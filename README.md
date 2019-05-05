@@ -56,7 +56,7 @@ and problematic methods were excluded.
 One of the most accurate caret classification methods is avNNet which is one 
 of the neural network methods from the venerable
 [nnet](https://cran.r-project.org/web/packages/nnet/index.html) package.  
-The Survived classes are reasonably balanced so accuracy is an acceptible
+The Survived classes are reasonably balanced so accuracy is an acceptable
 performance metric and it's the metric used on the 
 [Kaggle leaderboard](https://www.kaggle.com/c/titanic/leaderboard).
 
@@ -109,7 +109,7 @@ accuracies for the Titanic competition are included in the table below:
     | regLogistic       | 0.8295   | 0.6356 | 172.626        |
     | glmboost          | 0.8284   | 0.6333 | 10.090         |
 
-Note: The xgbDART method has surprisinly bad performance on the Kaggle
+Note: The xgbDART method has surprisingly bad performance on the Kaggle
 leaderboard.
 
 

@@ -24,7 +24,7 @@ The [doParallel](https://cran.r-project.org/web/packages/doParallel/index.html)
 package for parallelising training.
 
 To install the required libraries in an R session:
-```
+```r
 install.packages("caret", dependencies = c("Depends", "Suggests"))
 install.packages("rpart") # rpart should be installed with above command
 install.packages("doParallel")
@@ -137,7 +137,7 @@ These files demonstrate how to build models for most of the supported caret clas
 ## Installation/Usage
 
 To install the required libraries in an R session:
-```
+```r
 install.packages("caret", dependencies = c("Depends", "Suggests"))
 install.packages("rpart") # rpart should be installed with above command
 install.packages("doParallel")
@@ -146,13 +146,13 @@ install.packages("doParallel")
 The R files can be ran in sequence or the R session image can be loaded.
 
 Clone repository:
-```
+```sh
 git clone https://github.com/makeyourownmaker/KaggleTitanicModels
 cd KaggleTitanicModels
 ```
 
 Either run files in sequence in an R session:
-```
+```r
 setwd("KaggleTitanicModels")
 source("1-load.R", echo = TRUE)
 source("2-clean.R", echo = TRUE)
@@ -162,7 +162,7 @@ source("5-kaggle-submission.R", echo = TRUE)
 ```
 
 Or load R session image in an R session:
-```
+```r
 setwd("KaggleTitanicModels")
 load("KaggleTitanicModels.RData")
 ```

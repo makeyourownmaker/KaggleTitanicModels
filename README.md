@@ -9,6 +9,8 @@
 Entry for the [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic/) 
 competition on [Kaggle](https://www.kaggle.com/).
 
+If you like KaggleTitanicModels, give it a star, or fork it and contribute!
+
 
 ## Requirements
 

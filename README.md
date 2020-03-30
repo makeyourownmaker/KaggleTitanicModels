@@ -175,6 +175,10 @@ load("KaggleTitanicModels.RData")
 * Fix some of the failing methods
   * Except any methods that depend on rJava
   * Except any methods not on CRAN which includes [mxnet](https://mxnet.apache.org/)
+* Improve caret hyperparameter tuning
+  * Caret supports grid search and random search but not Bayesian optimisation
+  * Try [adaptive resampling](https://topepo.github.io/caret/adaptive-resampling.html)
+    to tune hyperparameters in a way that concentrates on values that are close to the optimal settings
 * Improve feature engineering
   * Neural networks and other methods would benefit from scaling and centering
   * Others have looked at adding a Cabin deck variable based on the Cabin column

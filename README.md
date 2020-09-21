@@ -136,7 +136,7 @@ These files demonstrate how to build models for most of the supported caret clas
    * Large (by GitHub standards) file 84 MBs
 
 
-## Installation/Usage
+## Installation
 
 To install the required libraries in an R session:
 ```r
@@ -152,6 +152,9 @@ Clone repository:
 git clone https://github.com/makeyourownmaker/KaggleTitanicModels
 cd KaggleTitanicModels
 ```
+
+
+## Usage
 
 Either run files in sequence in an R session:
 ```r
